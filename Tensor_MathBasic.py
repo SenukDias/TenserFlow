@@ -14,26 +14,26 @@ tensC = tf.add(tensA,tensB)
 print(tensC)
 
 # Tensor Substraction
-print("Tensor Substraction")
+print("\nTensor Substraction")
 tensD = tf.subtract(tensA,tensB)
 # tensD = tensA - tensB
 print(tensD)
 
 # Tensor Divition
-print("Tensor Divition")
+print("\nTensor Divition")
 tensE = tf.divide(tensB,tensA)
 # tensE = tensB / tensA
 print(tensE)
 
 # Tensor multiplication
-print("Tensor Multiplication")
+print("\nTensor Multiplication")
 tensF = tf.multiply(tensA,tensB)
 print(tensF)
 
 # Tensor Dot Product
 import numpy as np
 
-print("Dot Product")
+print("\nDot Product")
 tenA = tf.constant(np.array([[1,2],[3,4]]))
 tenB = tf.constant(np.array([[11,12],[13,14]]))
 
@@ -42,6 +42,6 @@ print(tenA)
 print("Tensor B")
 print(tenB)
 
-print("Dot Product ")
+print("Dot Product of Tensor A and B")
 tenC = tf.tensordot(tenA,tenB, axes=1)
 print(tenC)
